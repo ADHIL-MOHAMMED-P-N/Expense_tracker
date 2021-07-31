@@ -1,0 +1,26 @@
+{
+    "name": "expense-tracker",
+    "version": "1.0.0",
+    "description": "Expense tracker using vue and node",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/index.js",
+        "dev": "nodemon server/index.js"
+    },
+    "author": "Adhil Mohammed P N",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "connect-mongo": "^4.4.1",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.2",
+        "mongoose": "^5.13.3",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
