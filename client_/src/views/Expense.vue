@@ -38,13 +38,17 @@
       v-bind:index="index"
       v-bind:key="expense._id"
       >
-    <div class="card m-2" style="width: 18rem;">
+    <div class="card m-2 bg-light" style="width: 18rem;">
   <div class="card-body">
     <h6 class="card-subtitle" >{{expense.spendTitle}}</h6>
-    <h4 class="card-title">{{expense.spendAmount}}</h4>
-    <h6 class="card-subtitle mb-2 text-muted">category</h6>
+    <h4 class="card-title">{{expense.spendAmount}} ₹</h4>
+    
     <p class="card-text">{{expense.description}}</p>
-    <p class="card-text">{{expense.date}}</p>
+    <p class="card-text">{{
+      
+      `${expense.date.getDate()}/${expense.date.getMonth()}/${expense.date.getFullYear()}`
+      
+      }}</p>
      <form action="">
        <button v-on:click="deleteExpense(expense._id)" type="submit" class="btn btn-danger">delete</button>
   </form>
